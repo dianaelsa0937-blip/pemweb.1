@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Kuliah</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 40px;
+            /* Latar belakang hijau sangat muda/lembut serasi dengan tema depan Anda */
+            background-color: #e2edd9; 
+            color: #000000;
+        }
+
+        .container {
+            display: inline-block;
+            border: 1px solid #5a7d55;
+            padding: 30px 40px 40px 40px;
+            width: 550px; 
+            box-sizing: border-box;
+            background-color: #ffffff; /* Kotak tabel tetap putih agar teks jelas dibaca */
+            border-radius: 12px; /* Sudut kotak agak melengkung manis mirip tombol menu Anda */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        /* WARNA NUANSA BARU: Judul diubah menjadi Hijau Tua Daun */
+        .section-title {
+            text-align: left;
+            font-size: 34px;
+            font-weight: bold;
+            color: #3b6b4c; /* Warna hijau tua khas tombol menu depan Anda */
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 2px;
+            width: 100%;
+            font-size: 16px; 
+        }
+
+        th, td {
+            border: 1px solid #6c8e73;
+            padding: 8px 12px;
+            vertical-align: middle;
+        }
+
+        /* WARNA NUANSA BARU: Header kolom menggunakan latar Hijau Daun yang serasi */
+        .bg-green-header {
+            background-color: #467a57; /* Warna hijau daun menu utama */
+            color: #ffffff; /* Teks kolom diubah putih agar kontras dan mudah dibaca */
+            font-weight: bold;
+        }
+
+        .table-title {
+            font-size: 17px;
+            font-weight: bold;
+            padding: 8px;
+            color: #3b6b4c;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+        
+        .text-left {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Kotak Pembungkus Utama -->
+    <div class="container">
+        
+        <!-- Judul Utama Hijau Tua -->
+        <div class="section-title">Jadwal Kuliah</div>
+
+        <!-- Tabel Jadwal Kuliah -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="4" class="text-center table-title">Jadwal Kuliah Semester 1</th>
+                </tr>
+                <tr>
+                    <th style="width: 70px;" class="text-center bg-green-header">Hari</th>
+                    <th style="width: 110px;" class="text-center bg-green-header">Jam</th>
+                    <th class="text-center bg-green-header">Mata Kuliah</th>
+                    <th style="width: 90px;" class="text-center bg-green-header">Ruangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-left">Senin</td>
+                    <td class="text-center">08:00 - 10:00</td>
+                    <td class="text-left">Pemrograman Web</td>
+                    <td class="text-left">1A</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Selasa</td>
+                    <td class="text-center">10:00 - 12:00</td>
+                    <td class="text-left">Basis Data</td>
+                    <td class="text-left">1A</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Kamis</td>
+                    <td class="text-center">08:00 - 10:00</td>
+                    <td class="text-left">Algoritma</td>
+                    <td class="text-left">1A</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Jumat</td>
+                    <td class="text-center">13:00 - 15:00</td>
+                    <td class="text-left">Sistem Operasi</td>
+                    <td class="text-left">1A</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="text-left">Kegiatan Mahasiswa</td>
+                    <td class="text-left">ruangan kelas</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

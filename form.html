@@ -1,0 +1,81 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran</title>
+</head>
+<!-- LATAR BELAKANG HALAMAN DIUBAH JADI HIJAU NUANSA DEPAN -->
+<body style="background-color: #c5e1b5; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; font-family: sans-serif; padding: 20px 0;">
+
+    <!-- KOTAK FORMULIR DENGAN NUANSA HIJAU KREM LEMBUT -->
+    <div style="background-color: #eaf2e8; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 500px; width: 90%; border: 2px solid #1e3d1a;">
+        
+        <h2 style="margin-top: 0; margin-bottom: 20px; color: #1e3d1a; border-bottom: 2px solid #b5dca3; padding-bottom: 8px;">Formulir Pendaftaran</h2>
+        
+        <form>
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; font-weight: bold; color: #2d5a27; margin-bottom: 5px;">Nama Lengkap:</label>
+                <input type="text" placeholder="Masukkan nama" style="width: 100%; padding: 8px; border: 1px solid #1e3d1a; border-radius: 6px; box-sizing: border-box;">
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; font-weight: bold; color: #2d5a27; margin-bottom: 5px;">Email:</label>
+                <input type="email" placeholder="nama@email.com" style="width: 100%; padding: 8px; border: 1px solid #1e3d1a; border-radius: 6px; box-sizing: border-box;">
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; font-weight: bold; color: #2d5a27; margin-bottom: 5px;">Password:</label>
+                <input type="password" style="width: 100%; padding: 8px; border: 1px solid #1e3d1a; border-radius: 6px; box-sizing: border-box;">
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; font-weight: bold; color: #2d5a27; margin-bottom: 5px;">Umur:</label>
+                <input type="number" style="width: 60px; padding: 8px; border: 1px solid #1e3d1a; border-radius: 6px; box-sizing: border-box;">
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; font-weight: bold; color: #2d5a27; margin-bottom: 5px;">Tanggal Lahir:</label>
+                <input type="date" style="padding: 8px; border: 1px solid #1e3d1a; border-radius: 6px;">
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; font-weight: bold; color: #2d5a27; margin-bottom: 5px;">Jenis Kelamin:</label>
+                <label style="margin-right: 15px; color: #333;"><input type="radio" name="jk"> Laki-laki</label>
+                <label style="color: #333;"><input type="radio" name="jk"> Perempuan</label>
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; font-weight: bold; color: #2d5a27; margin-bottom: 5px;">Hobi:</label>
+                <label style="margin-right: 10px; color: #333;"><input type="checkbox"> Coding</label>
+                <label style="margin-right: 10px; color: #333;"><input type="checkbox"> Gaming</label>
+                <label style="color: #333;"><input type="checkbox"> Olahraga</label>
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; font-weight: bold; color: #2d5a27; margin-bottom: 5px;">Jurusan:</label>
+                <select style="width: 100%; padding: 8px; border: 1px solid #1e3d1a; border-radius: 6px; background-color: white;">
+                    <option>-- Pilih Jurusan --</option>
+                    <option>Sistem Informasi</option>
+                    <option>Teknik Informatika</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; font-weight: bold; color: #2d5a27; margin-bottom: 5px;">Alamat:</label>
+                <textarea placeholder="Masukkan alamat" style="width: 100%; padding: 8px; border: 1px solid #1e3d1a; border-radius: 6px; box-sizing: border-box; height: 60px; resize: none;"></textarea>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; font-weight: bold; color: #2d5a27; margin-bottom: 5px;">Foto:</label>
+                <input type="file" style="color: #333;">
+            </div>
+
+            <!-- TOMBOL DIUBAH MENJADI HIJAU TUA BIAR SERASI -->
+            <button type="submit" style="background-color: #1e3d1a; color: white; border: none; padding: 10px 20px; font-weight: bold; border-radius: 20px; cursor: pointer; width: 100%; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                Kirim Pendaftaran
+            </button>
+        </form>
+
+    </div>
+
+</body>
+</html>

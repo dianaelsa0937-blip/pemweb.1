@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Green Website</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            min-height: 100vh;
+            color: #214d35;
+            background:
+                radial-gradient(ellipse at 10% 10%, #d4e5c8 0%, transparent 38%),
+                radial-gradient(ellipse at 90% 90%, #a9c69c 0%, transparent 35%),
+                linear-gradient(135deg, #eaf3e4, #f8faf4 55%, #dcebd4);
+            overflow-x: hidden;
+        }
+
+        /* Hiasan daun */
+        body::before {
+            content: "❧";
+            position: fixed;
+            top: -65px;
+            left: -30px;
+            font-size: 230px;
+            color: rgba(38, 88, 54, 0.13);
+            transform: rotate(-35deg);
+            pointer-events: none;
+        }
+
+        body::after {
+            content: "❧";
+            position: fixed;
+            bottom: -100px;
+            right: -35px;
+            font-size: 260px;
+            color: rgba(38, 88, 54, 0.13);
+            transform: rotate(145deg);
+            pointer-events: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 720px;
+            min-height: 100vh;
+            margin: auto;
+            padding: 45px 24px 55px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .greeting {
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 4px;
+            color: #28563a;
+            margin-bottom: 20px;
+        }
+
+        .profile {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #537d57;
+            background: #dcebd4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 28px;
+            box-shadow: 0 5px 14px rgba(36, 78, 48, 0.15);
+        }
+
+        .profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile span {
+            font-size: 12px;
+            font-weight: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(25px, 5vw, 38px);
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.4;
+            margin-bottom: 12px;
+            color: #19482d;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #55745b;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .decoration {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            color: #527e56;
+            margin-bottom: 25px;
+            font-size: 23px;
+        }
+
+        .decoration span {
+            width: 55px;
+            height: 1px;
+            background: #9ab996;
+        }
+
+        .menu {
+            width: 100%;
+            max-width: 490px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .menu a {
+            min-height: 68px;
+            padding: 12px 23px;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            text-decoration: none;
+            color: #ffffff;
+            background: linear-gradient(110deg, #285b3b, #46764d);
+            border: 2px solid #d2e4c9;
+            border-radius: 50px;
+            box-shadow: 0 5px 0 #a0c39a,
+                        0 9px 17px rgba(34, 73, 43, 0.15);
+            transition: 0.25s ease;
+        }
+
+        .menu a:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(110deg, #19472d, #356b43);
+            box-shadow: 0 7px 0 #91b78a,
+                        0 12px 20px rgba(34, 73, 43, 0.2);
+        }
+
+        .menu-icon {
+            width: 43px;
+            height: 43px;
+            min-width: 43px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #e4efd9;
+            color: #2c5d3b;
+            font-size: 21px;
+        }
+
+        .menu-text {
+            flex: 1;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .arrow {
+            font-size: 25px;
+            color: #e4efd9;
+        }
+
+        .footer {
+            margin-top: 35px;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-style: italic;
+            font-size: 14px;
+            color: #527454;
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 35px 20px 40px;
+            }
+
+            .menu a {
+                min-height: 62px;
+                padding: 10px 17px;
+                gap: 13px;
+            }
+
+            .menu-icon {
+                width: 39px;
+                height: 39px;
+                min-width: 39px;
+            }
+
+            .menu-text {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+        <p class="greeting">HALO SEMUANYA!</p>
+
+        <div class="profile">
+            <img src="diana.jpeg.jpeg" alt="Foto Profil">
+        </div>
+
+        <h1>Selamat Datang Di Web Saya</h1>
+
+        <p class="subtitle">
+            ✿ Mengenal lebih dekat tentang saya ✿
+        </p>
+
+        <div class="decoration">
+            <span></span>
+            ♡
+            <span></span>
+        </div>
+
+        <nav class="menu">
+
+            <a href="profile.html">
+                <span class="menu-icon">♙</span>
+                <span class="menu-text">MY PROFILE</span>
+                <span class="arrow">›</span>
+            </a>
+
+            <a href="about-me.html">
+                <span class="menu-icon">♡</span>
+                <span class="menu-text">ABOUT ME</span>
+                <span class="arrow">›</span>
+            </a>
+
+            <a href="hobbies.html">
+                <span class="menu-icon">✿</span>
+                <span class="menu-text">MY HOBBIES</span>
+                <span class="arrow">›</span>
+            </a>
+
+            <a href="educations.html">
+                <span class="menu-icon">♧</span>
+                <span class="menu-text">EDUCATION</span>
+                <span class="arrow">›</span>
+            </a>
+
+            <a href="course-schedule.html">
+                <span class="menu-icon">▦</span>
+                <span class="menu-text">CLASS SCHEDULE</span>
+                <span class="arrow">›</span>
+            </a>
+
+            <a href="table1.html">
+                <span class="menu-icon">▤</span>
+                <span class="menu-text">TABLE 1</span>
+                <span class="arrow">›</span>
+            </a>
+
+            <a href="table2.html">
+                <span class="menu-icon">▤</span>
+                <span class="menu-text">TABLE 2</span>
+                <span class="arrow">›</span>
+            </a>
+
+            <a href="table3.html">
+                <span class="menu-icon">▤</span>
+                <span class="menu-text">TABLE 3</span>
+                <span class="arrow">›</span>
+
+             <a href="form.html">
+                <span class="menu-icon">▤</span>
+                <span class="menu-text">FORMULIR PENDAFTARAN</span>
+                <span class="arrow">›</span>
+            </a>
+
+        </nav>
+
+        <p class="footer">
+        </p>
+
+    </main>
+</body>
+</html>
